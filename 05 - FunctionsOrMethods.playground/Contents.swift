@@ -22,3 +22,52 @@ func CalculateShapeArea(length:Int,width:Int) -> Int {
 }
 
 let newArea = CalculateShapeArea(length: 20, width: 50)
+
+func CalculateMultiplication(firstValue:Int,secondvalue:Int) -> Int{
+    
+    let newValue = firstValue * secondvalue
+    
+    return newValue
+}
+
+let x = CalculateMultiplication(firstValue: 10, secondvalue: 3)
+
+func concatinate(first:String,second:String)->String{
+    return first+second
+}
+
+
+let newWord = concatinate(first: "Geeks", second: "Creative")
+let secondWord = concatinate(first: "this is Sparta", second: "hello geeker!")
+let practiceWord = concatinate(first: "my life!", second: "my text")
+
+
+var BankAccountBalance = 1000.00
+
+func LetsBuyThis(CurrentBalance: Double, PriceOfItem:Double) -> Double{
+    if PriceOfItem <= CurrentBalance {
+        print("just bought this for \(PriceOfItem)!!")
+        return CurrentBalance - PriceOfItem
+
+    }else{
+        print("Save some money!")
+        return CurrentBalance
+    }
+}
+
+var softShoes = 200.00
+
+BankAccountBalance = LetsBuyThis(CurrentBalance: BankAccountBalance, PriceOfItem: softShoes)
+
+
+func LetsBuyNewOne(CurrentBalance:inout Double,price:Double){
+    CurrentBalance -= price
+}
+
+
+LetsBuyNewOne(CurrentBalance: &BankAccountBalance, price: softShoes)
+
+
+
+
+
