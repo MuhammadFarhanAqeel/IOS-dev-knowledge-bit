@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         PuppyLogo.isHidden=false
         WelcomeButton.isHidden = true
     }
+    
+    
  
 }
 
